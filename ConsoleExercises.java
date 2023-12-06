@@ -6,7 +6,33 @@ public class ConsoleExercises {
         System.out.format("The value of pi is approximately %.2f. \n", pi);
 
         Scanner scanner = new Scanner(System.in);
+        scanner.useDelimiter("\n"); // have to hit enter after each word, otherwise hangs w/ multiple words
         System.out.println("Enter an integer");
         int inputInt = scanner.nextInt();
+
+        System.out.println("Enter 3 words");
+        String firstWord = scanner.next();
+        String secondWord = scanner.next();
+        String thirdWord = scanner.next();
+        System.out.printf("%s %s %s \n", firstWord, secondWord, thirdWord); // 2 words causes console to hang, more than 3 omits after third word
+
+        scanner.nextLine(); // takes the Enter from the previous prompt in order to properly accept the sentence prompt
+        System.out.println("Enter a sentence");
+//        String sentenceNext = scanner.next(); Only grabs first word
+        String sentenceNext = scanner.nextLine();
+        System.out.println(sentenceNext);
+
+        System.out.println("Enter the length of the classroom");
+//        float classroomLength = parseFloat(scanner.next());
+        int classroomLength = scanner.nextInt();
+        System.out.println("Enter the width of the classroom");
+//        float classroomWidth = parseFloat(scanner.next());
+        int classroomWidth = scanner.nextInt();
+        System.out.println("The area of the classroom is " + (classroomLength * classroomWidth) + " and the perimeter is " + ((classroomLength*2)+(classroomWidth*2)));
+
+        System.out.println("Enter the height of the classroom");
+//        float classroomHeight = parseFloat(scanner.next());
+        int classroomHeight = scanner.nextInt();
+        System.out.println("The volume of the classroom is " + (classroomLength * classroomWidth * classroomHeight));
     }
 }
