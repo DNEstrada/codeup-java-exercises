@@ -27,7 +27,7 @@ public class ControlFlowExercises {
 //        do {
 //            System.out.println(i);
 //            i = i * i;
-//        } while (i < 1000000);
+//        } while (i < 1000000);    * can do 1_000_000
 
 //        1.c.
 //        for (int i = 5; i <= 15; i++) {
@@ -42,7 +42,7 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        }
 
-//        for (long i = 2; i < 1000000; i = i * i) {
+//        for (long i = 2; i < 1000000; i = i * i) {    * can do i *= i
 //            System.out.println(i);
 //        }
 
@@ -78,11 +78,11 @@ public class ControlFlowExercises {
 //        }
 
 //        4.
-        String continuePrompt = "";
+        String continuePrompt;
         do {
             System.out.println("Please enter a numerical grade from 0 to 100");
             int numGrade = scanner.nextInt();
-            if (numGrade >= 88 && numGrade <= 100) {
+            if (numGrade >= 88 && numGrade <= 100) { // * can add validate statement if not in range
                 if (numGrade >= 97 && numGrade <= 100) {
                     System.out.println("A+");
                 } else if (numGrade >= 93 && numGrade <= 96) {
@@ -90,7 +90,7 @@ public class ControlFlowExercises {
                 } else if (numGrade >= 88 && numGrade <= 92) {
                     System.out.println("A-");
                 }
-            } else if (numGrade >= 80 && numGrade <= 87) {
+            } else if (numGrade >= 80 && numGrade <= 87) { // * doesn't need upper conditional since it's not fulfilled by above condition
                 if (numGrade >= 86 && numGrade <= 87) {
                     System.out.println("B+");
                 } else if (numGrade >= 83 && numGrade <= 85) {
