@@ -8,7 +8,8 @@ public class MethodsExercises {
 //          System.out.println(division(5, 0));
 //          System.out.println(modulus(3, 2));
 //          getInteger(1, 10);
-          factorial();
+//          factorial();
+          diceRoll();
      }
      // 1.
      public static int addition(int x, int y) {
@@ -56,5 +57,24 @@ public class MethodsExercises {
                factorial();
           }
           return factTotal;
+     }
+     // 4.
+     public static void diceRoll() {
+          Scanner scanner = new Scanner(System.in);
+          System.out.println("How many sides on the dice pair: ");
+          int userInput = scanner.nextInt();
+          System.out.println("Press Enter to roll the dice");
+          scanner.nextLine();
+          scanner.nextLine();
+          System.out.printf("Dice 1 rolls: %d\n", randomNumGenerator(userInput));
+          System.out.printf("Dice 2 rolls: %d\n", randomNumGenerator(userInput));
+          System.out.println("Do you want to continue? y/n");
+          String userContinue = scanner.next();
+          if(userContinue.equals("y")) {
+               diceRoll();
+          }
+     }
+     public static int randomNumGenerator(int max) {
+          return (int)(Math.random() * max) + 1;
      }
 }
