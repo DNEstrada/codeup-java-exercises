@@ -78,35 +78,47 @@ public class ControlFlowExercises {
 //        }
 
 //        4.
-        System.out.println("Please enter a numerical grade from 0 to 100");
-        int numGrade = scanner.nextInt();
-        if (numGrade >= 88 && numGrade <= 100) {
-            System.out.println("A");
-        } else if (numGrade >= 80 && numGrade <= 87) {
-            System.out.println("B");
-        } else if (numGrade >= 67 && numGrade <= 79) {
-            System.out.println("C");
-        } else if (numGrade >= 60 && numGrade <= 66) {
-            System.out.println("D");
-        } else if (numGrade >= 0 && numGrade <= 59) {
-            System.out.println("F");
-        }
-        System.out.println("Do you want to continue? y/n");
-        String continuePrompt = scanner.next().toLowerCase();
-        if (continuePrompt.equals("y")) {
+        String continuePrompt = "";
+        do {
             System.out.println("Please enter a numerical grade from 0 to 100");
-            numGrade = scanner.nextInt();
+            int numGrade = scanner.nextInt();
             if (numGrade >= 88 && numGrade <= 100) {
-                System.out.println("A");
+                if (numGrade >= 97 && numGrade <= 100) {
+                    System.out.println("A+");
+                } else if (numGrade >= 93 && numGrade <= 96) {
+                    System.out.println("A");
+                } else if (numGrade >= 88 && numGrade <= 92) {
+                    System.out.println("A-");
+                }
             } else if (numGrade >= 80 && numGrade <= 87) {
-                System.out.println("B");
+                if (numGrade >= 86 && numGrade <= 87) {
+                    System.out.println("B+");
+                } else if (numGrade >= 83 && numGrade <= 85) {
+                    System.out.println("B");
+                } else if (numGrade >= 80 && numGrade <= 82) {
+                    System.out.println("B-");
+                }
             } else if (numGrade >= 67 && numGrade <= 79) {
-                System.out.println("C");
+                if (numGrade >= 77 && numGrade <= 79) {
+                    System.out.println("C+");
+                } else if (numGrade >= 73 && numGrade <= 76) {
+                    System.out.println("C");
+                } else if (numGrade >= 67 && numGrade <= 72) {
+                    System.out.println("C-");
+                }
             } else if (numGrade >= 60 && numGrade <= 66) {
-                System.out.println("D");
+                if (numGrade >= 65 && numGrade <= 66) {
+                    System.out.println("D+");
+                } else if (numGrade >= 63 && numGrade <= 64) {
+                    System.out.println("D");
+                } else if (numGrade >= 60 && numGrade <= 62) {
+                    System.out.println("D-");
+                }
             } else if (numGrade >= 0 && numGrade <= 59) {
                 System.out.println("F");
             }
-        }
+            System.out.println("Do you want to continue? y/n");
+            continuePrompt = scanner.next().toLowerCase();
+        } while (continuePrompt.equals("y"));
     }
 }
