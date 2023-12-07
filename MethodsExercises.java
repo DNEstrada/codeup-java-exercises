@@ -7,7 +7,8 @@ public class MethodsExercises {
 //          System.out.println(multiplication(2, 3));
 //          System.out.println(division(5, 0));
 //          System.out.println(modulus(3, 2));
-     getInteger(1, 10);
+//          getInteger(1, 10);
+          factorial();
      }
      // 1.
      public static int addition(int x, int y) {
@@ -35,5 +36,25 @@ public class MethodsExercises {
           } else {
                return getInteger(min, max);
           }
+     }
+     // 3.
+     public static long factorial() {
+          Scanner scanner = new Scanner(System.in);
+          System.out.println("Enter a number between 1 and 10: ");
+          int userInput = scanner.nextInt();
+          if (userInput < 1 || userInput > 10) {
+               factorial();
+          }
+          long factTotal = 1;
+          for (int i = 1; i <= userInput; i++) {
+               factTotal *= i;
+          }
+          System.out.println(factTotal);
+          System.out.println("Do you want to continue? y/n");
+          String userContinue = scanner.next();
+          if(userContinue.equals("y")) {
+               factorial();
+          }
+          return factTotal;
      }
 }
