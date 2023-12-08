@@ -7,9 +7,9 @@ public class MethodsExercises {
 //          System.out.println(multiplication(2, 3));
 //          System.out.println(division(5, 0));
 //          System.out.println(modulus(3, 2));
-//          getInteger(1, 10);
+          getInteger(1, 10);
 //          factorial();
-          diceRoll();
+//          diceRoll();
      }
      // 1.
      public static int addition(int x, int y) {
