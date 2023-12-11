@@ -39,8 +39,8 @@ public class Person {
 //TODO: change the name field to the passed value
           this.name = name;
      }
-     public void sayHello(){
+     public String sayHello(){
 //TODO: print a message to the console using the person's name
-          System.out.printf("The person is %s\n", this.name);
+          return "The person is " + this.name;
      }
 }
