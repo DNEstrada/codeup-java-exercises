@@ -1,10 +1,12 @@
+package src;
+
 import java.util.Scanner;
 
 public class Bob {
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Bob is a lackadaisical teenager. In conversation, his responses are very limited.");
+        System.out.println("src.Bob is a lackadaisical teenager. In conversation, his responses are very limited.");
         boolean continueConvo;
         do {
             continueConvo = true;
