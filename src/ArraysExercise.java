@@ -3,9 +3,9 @@ package src;
 public class ArraysExercise {
      public static void main(String[] args) {
           int[] numbers = {1, 2, 3, 4, 5};
-          System.out.println(numbers); // prints out the object reference
+          System.out.println(numbers); // prints out the arr reference
 
-          Person[] personGroup = new Person[3];
+          Person[] personGroup = new Person[3]; // * Person[] people = {person1, person2, person3}
           personGroup[0] = new Person("Daniel");
           personGroup[1] = new Person("Nathan");
           personGroup[2] = new Person("Casper");
@@ -29,5 +29,8 @@ public class ArraysExercise {
                }
           }
           return newArray;
+          // * Person[] newArray = Arrays.copyOf(people, people.length + 1);
+          // newArray[newArray.length - 1] = person;
+          // return newArray;
      }
 }

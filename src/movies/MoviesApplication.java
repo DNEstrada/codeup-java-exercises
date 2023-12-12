@@ -14,7 +14,7 @@ public class MoviesApplication {
                   " 5 - view movies in the scifi category\n" +
                   "\n" +
                   " Enter your choice: ");
-          int catChoice = input.getInt();
+          int catChoice = input.getInt(); // * better to use the one w/ min max to keep inputs within the choices
           listMovies(catChoice);
      }
 
@@ -49,7 +49,7 @@ public class MoviesApplication {
                          break;
                     default:
                          break;
-               }
+               } // * forgot to do method recursion to prompt continue
           }
      }
 }
