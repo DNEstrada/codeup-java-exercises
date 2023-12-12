@@ -10,7 +10,7 @@ public class Input {
      }
 
      public String getString() {
-          System.out.println("Please enter a String");
+//          System.out.println("Please enter a String");
           return this.scanner.nextLine();
      }
 

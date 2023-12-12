@@ -19,9 +19,15 @@ public class ArraysExercise {
           }
      }
 
-     public static Person[] addPerson(Person[] personGroup, Person person) {
+     public static Person[] addPerson(Person[] personGroup, Person newPerson) {
           Person[] newArray = new Person[personGroup.length + 1];
-          newArray[newArray.length-1] = person;
+          for (int i = 0; i <= personGroup.length; i++) {
+               if (i==personGroup.length) {
+                   newArray[i] = newPerson;
+               } else {
+                    newArray[i] = personGroup[i];
+               }
+          }
           return newArray;
      }
 }
