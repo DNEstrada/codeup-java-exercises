@@ -6,28 +6,19 @@ public class Square extends Quadrilateral implements Measurable {
           super(length, width);
      }
 
-     @Override
-     public double getPerimeter() {
-          return 0;
-     }
-
-     @Override
-     public double getArea() {
-          return 0;
-     }
-//     public double side;
+     public double side;
 //
 //     public Square(double side) {
 //          super(side, side);
 //     }
 //
-//     public double getArea () {
-//          side = length;
-//          return side * side;
-//     }
-//
-//     public double getPerimeter () {
-//          side = length;
-//          return side * 4;
-//     }
+     public double getArea () {
+          side = length;
+          return side * side;
+     }
+
+     public double getPerimeter () {
+          side = length;
+          return side * 4;
+     }
 }
