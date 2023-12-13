@@ -1,7 +1,5 @@
 package src.grades;
 import src.util.Input;
-
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class GradesApplication {
@@ -50,5 +48,11 @@ public class GradesApplication {
           if (choice == 0) {
                System.out.printf("\nSorry, no student found with the GitHub username of %s\n\nWould you like to see another student?\n", infoChoice);
           }
+
+//          * switch (userInput) {
+//             case "MoeZilla":
+//                  System.out.println("Name: " + students.get(userInput).getName() + ' - ' + "Github Username: " + userInput + "\n" +
+//                  "Current Average grade: " + students.get(userInpu).getGradeAverage());
+//                  break;
      }
 }
